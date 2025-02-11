@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif; /* More professional font */
+    margin: 0;
+    padding: 0;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230714/pngtree-3d-render-of-laptop-repair-service-with-white-background-image_3886965.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #444; /* Darker gray for text */
+    line-height: 1.6;
+
+}
+
+header {
+    background-color: rgba(74, 144, 226, 0.8); /* Soft blue with transparency */
+    color: white;
+    text-align: center;
+    padding: 20px 15px; /* Consistent padding */
+    border-bottom: 4px solid #357ab8; /* Darker blue border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for prominence */
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Slightly reduced letter spacing */
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50; /* Darker navy blue */
+    margin: 0;
+    padding: 10px 0;
+
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Consistent margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Consistent padding */
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    font-size: 1rem; /* Consistent font size */
+}
+
+nav ul li a:hover {
+    background-color: #357ab8; /* Subtle hover effect */
+    color: #ffffff; /* Keep text white on hover */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+section {
+    padding: 25px 20px; /* Increased padding for better spacing */
+    max-width: 800px; /* Limit width for readability */
+    margin: 20px auto; /* Centered with margin */
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for sections */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Consistent margin */
+    border: 4px solid #4a90e2; /* Blue border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow for images */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(249, 249, 249, 0.8); /* Light gray with transparency */
+    padding: 20px; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow for form */
+}
+
+input, textarea {
+    margin-bottom: 15px; /* Consistent margin */
+    padding: 7px; /* Consistent padding */
+    width: 50%;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1rem; /* Consistent font size */
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #2c3e50; /* Darker navy blue */
+    color: white;
+    padding: 12px; /* Consistent padding */
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Consistent font size */
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ab8; /* Subtle hover effect */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(44, 62, 80, 0.7); /* Darker navy blue with 70% opacity */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 5px 0; /* Reduced padding for mobile */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduced margin for mobile */
+    }
+
+    section {
+        margin: 10px 5px; /* Smaller margin for very small screens */
+        padding: 15px 10px; /* Reduced padding for very small screens */
+    }
+
+    img {
+        margin: 10px auto; /* Reduced margin for very small screens */
+    }
+
+    form {
+        padding: 15px; /* Reduced padding for very small screens */
+    }
+
+    input, textarea {
+        padding: 10px; /* Consistent padding for very small screens */
+    }
+
+    button {
+        padding: 10px; /* Consistent padding for very small screens */
+    }
+}
